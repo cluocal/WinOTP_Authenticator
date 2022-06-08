@@ -62,15 +62,15 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Grid Canvas.ZIndex="1" x:Name="LoadingGrid" Background="#E5000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Visibility="Collapsed">
+            <Grid Canvas.ZIndex="1" x:Name="LoadingGrid" Background="#E5000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Visibility="Collapsed">
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                     <ProgressRing Height="50" Width="50" VerticalAlignment="Center" Foreground="White" IsActive="True" />
                     <TextBlock Name="Status" RequestedTheme="Dark" FontSize="26.667" TextWrapping="Wrap" TextAlignment="Center" />
                 </StackPanel>
             </Grid>
 
-            <StackPanel Name="Bannerbar" Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Stretch" />
-            <Frame x:Name="Contentframe" Grid.Row="2"/>
+            <StackPanel Name="Bannerbar" Grid.Row="2" Orientation="Vertical" HorizontalAlignment="Stretch" />
+            <Frame x:Name="Contentframe" Grid.Row="3"/>
         </Grid>
     </Grid>
 </Page>

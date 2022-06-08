@@ -17,6 +17,7 @@ using Synchronization.Exceptions;
 using Settings;
 using Windows.ApplicationModel.Resources;
 using Windows.ApplicationModel;
+using Windows.UI.Xaml.Data;
 using Authenticator.Utilities;
 using Authenticator.Views.Settings;
 
@@ -449,6 +450,11 @@ namespace Authenticator.Views.Pages
             mainPage.Navigate(typeof(SettingsPage));
 
         }
+        
+        private void Search_Clicked(object sender, RoutedEventArgs e)
+        {
+            mainPage.Navigate(typeof(SettingsPage));
+        }
 
         private void Settings_Clicked(object sender, RoutedEventArgs e)
         {
@@ -465,6 +471,11 @@ namespace Authenticator.Views.Pages
         {
             mainPage.Navigate(typeof(AddPage));
 
+        }
+
+        private void SearchBar_OnSearchQuery(object sender, TextsearchChangedEventArgs e)
+        {
+            
         }
     }
 }

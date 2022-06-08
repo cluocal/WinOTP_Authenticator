@@ -18,6 +18,7 @@ namespace Authenticator.Views.UserControls
         private Account account;
         private OTP otp;
         private bool _inEditMode;
+        private bool _isVisible;
         private DispatcherTimer timer;
         private MainPage mainPage;
         
@@ -66,6 +67,18 @@ namespace Authenticator.Views.UserControls
                 _editEnabled = value;
 
                 Delete.IsEnabled = value;
+            }
+        }
+        
+        public bool IsVisible
+        {
+            get
+            {
+                return _isVisible;
+            }
+            set
+            {
+                _isVisible = value;
             }
         }
 

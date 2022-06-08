@@ -71,6 +71,7 @@
         </Grid.RowDefinitions>
         <controls:TimeProgressBar TimeElapsed="TimeProgressBar_TimeElapsed" Grid.Row="0" Height="5" HorizontalAlignment="Stretch" />
         <ProgressBar Name="LoaderProgressBar" Grid.Row="1" IsIndeterminate="True" Height="10" HorizontalAlignment="Stretch" />
+        <controls:SearchBar SearchQuery="SearchBar_OnSearchQuery" Grid.Row="1" Height="50" HorizontalAlignment="Stretch" />
         <Grid Name="NoAccountsGrid" Visibility="Collapsed" Margin="10" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition x:Name="LeftColumn" Width="51" />
